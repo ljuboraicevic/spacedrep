@@ -1,5 +1,5 @@
 # Spacedrep
 
-docker build -t spacedrep:dev .
+1. Run `npm run build`
 
-docker run -d --restart unless-stopped --name=spacedrep -p 3001:3000 spacedrep:dev
+2. docker run -d --name spacedrep --restart=unless-stopped -v /home/pi/.config/spacedrep/build:/usr/local/apache2/htdocs -p 3001:80 httpd:2.4.57-alpine
