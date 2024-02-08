@@ -1,0 +1,61 @@
+/* This is the container div that holds the two divs */
+.app {
+display: flex; /* This makes it a flex container */
+flex-direction: column; /* This sets the direction of the flex items to vertical */
+height: 100vh; /* This sets the height of the container to the full viewport height */
+min-height: 100vh; /* This ensures that the container is always at least as tall as the viewport */
+}
+
+/* This is the first div that covers the rest of the page */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: space-between; /* Center vertically */
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.card-front {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  overflow-y: auto;
+}
+
+.card-back {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  overflow-y: auto;
+}
+
+
+/* This is the second div that takes up 100px and is always at the bottom */
+.footer {
+flex: 0 0 50px; /* This prevents it from growing or shrinking, and sets its initial size to 100px */
+position: sticky; /* This makes it stick to the bottom of the container */
+bottom: 0; /* This aligns it to the bottom of the container */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.header {
+flex: 0 0 50px; /* This prevents it from growing or shrinking, and sets its initial size to 100px */
+flex-direction: row;
+position: sticky; /* This makes it stick to the bottom of the container */
+top: 0; /* This aligns it to the bottom of the container */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+
+.button-div {
+text-align:center;
+height: 50px;
+}
